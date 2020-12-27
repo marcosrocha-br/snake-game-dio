@@ -1,13 +1,109 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
-    display: flex;    
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.979), rgba(255, 255, 255, 0.582)), url('../img/fundo.jpg');
+    background-size: cover;
+    
+}
+
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.level{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#pontos{
+    padding: 20px;
+    text-align: center;
+
+    color: rgb(46, 46, 43);
+    border: 2px groove grey;
+    border-radius: 4px;
+}
+
+#pontos h2{
+    margin-bottom: 30px;
+}
+
+#pontos #res{
+    font-size: 40px;
+}
+
+.erro{
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    
+    overflow: hidden;
+
+    left: 30%;
+    top: 35%;
+
+    display: none;
+    flex-direction: column;    
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    
+    border: 1px solid rgb(41, 14, 14);
+    border-radius: 10px;
+    background: linear-gradient(rgb(190, 20, 20), black);
+    color: rgb(184, 184, 23);
+}
+
+#msg{
+    
+    color: yellow;
+}
+
+#restart button{
+    padding:5px;
+    
+    background-color: rgb(2, 2, 2);
+    color: rgb(204, 201, 160);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#restart button:hover{
+    background-color: rgb(41, 41, 41);
+}
+
+@media screen and (max-width:650px){
+    .container{
+        flex-wrap: wrap-reverse;
+    }
+    #pontos{
+        padding: 10px 70px;
+    }
+
+    #pontos h2{
+        margin: 0;
+    }
+    #pontos #res{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:635px){
+    .erro{
+        font-size: x-large;
+        width: 30%;
+        height: 20%
+    }
 }

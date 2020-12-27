@@ -14,19 +14,20 @@ let food = {
 }
 
 function criarBG(){
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "#674d3c";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function criarCobrinha(){
     for(i=0; i<snake.length; i++){
-        context.fillStyle = "green";
+        context.fillStyle = "#d9ad7c";
         context.fillRect(snake[i].x, snake[i].y, box, box);
+        document.getElementById("res").innerHTML = i;
     }
 }
 
 function drawFood(){
-    context.fillStyle = "red";
+    context.fillStyle = "d4ac6e";
     context.fillRect(food.x, food.y, box, box);
 }
 
@@ -48,7 +49,7 @@ function iniciarJogo(){
     for(var i = 1; i < snake.length; i++){
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(jogo);
-            alert("Game over");
+            document.getElementsByClassName("erro")[0].style.display="flex";
         }
     }
 

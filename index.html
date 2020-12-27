@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>SNAKE GAME</title>
+    
 </head>
 <body>
-        <canvas id="snake" width="512" height="512"></canvas>
-    
-    <script src="js/script.js"></script>
-    
+        <di class="container">
+            <div class="screen">
+                <canvas id="snake" width="512" height="512"></canvas>
+                
+            </div>
+
+            <div class="level">
+                <div id="pontos">
+                    <h2>Level</h2>
+                    <div id="res"></div>
+                </div>
+            </div>
+            <div class="erro">
+                <div id="msg"></div>
+                    Game Over
+                <div id="restart">
+                    <button onclick="restart(window.location.href=window.location.href)">Restart</button>
+                </div>
+            </div>
+        </di>
+        <script src="js/script.js"></script>
 </body>
 </html>
