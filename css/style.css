@@ -5,8 +5,7 @@
 }
 
 body{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.979), rgba(255, 255, 255, 0.582)), url('../img/fundo.jpg');
-    background-size: cover;
+    background: linear-gradient(90deg, #606d6b,  #b8cece);
     
 }
 
@@ -28,7 +27,7 @@ body{
     padding: 20px;
     text-align: center;
 
-    color: rgb(46, 46, 43);
+    color: rgba(17, 17, 16, 0.733);
     border: 2px groove grey;
     border-radius: 4px;
 }
@@ -62,8 +61,9 @@ body{
     
     border: 1px solid rgb(41, 14, 14);
     border-radius: 10px;
-    background: linear-gradient(rgb(190, 20, 20), black);
-    color: rgb(184, 184, 23);
+    background-color: rgb(212, 212, 212);
+    /*background: linear-gradient(rgb(190, 20, 20), black);*/
+    color: red;
 }
 
 #msg{

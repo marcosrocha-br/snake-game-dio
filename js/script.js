@@ -14,7 +14,7 @@ let food = {
 }
 
 function criarBG(){
-    context.fillStyle = "#674d3c";
+    context.fillStyle = "#3b3b3b";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
@@ -27,7 +27,9 @@ function criarCobrinha(){
 }
 
 function drawFood(){
-    context.fillStyle = "d4ac6e";
+    var cor = Math.floor(Math.random()*1000);
+    context.fillStyle = "#"+cor;
+    //context.fillStyle = cor;
     context.fillRect(food.x, food.y, box, box);
 }
 
@@ -50,6 +52,13 @@ function iniciarJogo(){
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(jogo);
             document.getElementsByClassName("erro")[0].style.display="flex";
+            
+            addEventListener("keypress", restart);
+            function restart(event){
+            	if(event.keyCode == 13)
+			window.location.href=window.location.href;
+            }
+            
         }
     }
 
