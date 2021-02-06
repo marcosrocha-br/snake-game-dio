@@ -1,3 +1,5 @@
-## Projeto Digital Innovation One
+# Projeto Digital Innovation One
 
-### Recriando o jogo da cobrinha com JavaScript
+(*Bootcamp HTML Web Developer*)
+
+## Recriando o jogo da cobrinha com JavaScript
